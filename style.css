@@ -1,0 +1,98 @@
+#wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container
+{
+     position: relative ; 
+    display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center; 
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.background{
+    transform: translateZ(-15px) scale(2.5);
+    width: 100%;
+   
+   
+}
+.foreground
+{
+ 
+    transform: translateZ(-10px) scale(1.9);
+  left: 850px;
+  
+   
+}
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+ 
+}
+h1{
+    position: absolute;
+    color: aliceblue;
+    text-shadow: 2px 1px grey;
+   font-size: 8rem;
+}
+section
+{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+.secHeading
+{
+    font-size: 4rem;
+    padding: 0 8rem;
+    text-shadow: 2px 1px black;
+}
+.text
+{
+    font-size: 1.5rem;
+    padding: 0 9rem;
+    margin:5rem 0;
+}
+.bg
+{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.desc
+{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.bg1
+{
+    background-image: url(cycling.jpg);
+}
+.bg2
+{
+    background-image: url(paraglyding.jpg);
+}
+.bg3
+{
+    background-image: url(surfing.jpg);
+}
